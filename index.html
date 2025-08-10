@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">EventPro</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Your Event, Our Responsibility</h1>
+        <p>We make your moments unforgettable</p>
+        <a href="#events" class="btn">Explore Events</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We are a premium event management company, turning ideas into reality with creativity and dedication.</p>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <h2>Upcoming Events</h2>
+        <div class="event-card">
+            <img src="images/event1.jpg" alt="Event 1">
+            <h3>Music Concert</h3>
+            <p>Date: 15th August 2025</p>
+        </div>
+        <div class="event-card">
+            <img src="images/event2.jpg" alt="Event 2">
+            <h3>Wedding Ceremony</h3>
+            <p>Date: 20th September 2025</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 EventPro. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
