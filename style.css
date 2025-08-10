@@ -6,13 +6,20 @@
     font-family: Arial, sans-serif;
 }
 
+body.events-page {
+    background-color: rgb(15, 88, 14);
+    min-height: 100vh;
+    color: #fff;
+}
+
 header {
     background: #222;
     color: white;
-    padding: 1rem 2rem;
+    padding: 2rem 3rem;
     position: sticky;
     top: 0;
     z-index: 1000;
+    min-height: 5rem;
 }
 
 nav {
@@ -54,34 +61,76 @@ nav .nav-links a:hover {
     border: none;
 }
 
-.hero {
-    background: url('images/hero.jpg') no-repeat center center/cover;
-    height: 90vh;
+.fullscreen-image {
+    height: 100vh;
+    width: 100%;
+    background-image: url('https://image.wedmegood.com/resized/720X/uploads/member/1798298/1690256811_120FF__23.jpg?v=1.1');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: #000; /* fallback background color */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.fullscreen-image .image-overlay {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
     color: white;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.fullscreen-image h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    animation: slideInFromTop 1.2s ease-out;
+    letter-spacing: 3px;
+    line-height: 1.1;
+    text-align: center;
+    word-spacing: 5px;
+}
+
+.fullscreen-image p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero {
+    background: #f8f9fa;
+    height: auto;
+    color: #333;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 1rem;
+    padding: 4rem 1rem;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-.btn {
-    background: #f39c12;
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
-
-.btn:hover {
-    background: #d35400;
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #222;
 }
 
 .about, .events, .contact {
@@ -136,8 +185,180 @@ footer {
     background: #222;
     color: white;
     text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
+    padding: 2rem;
+    margin-top: 5rem;
+}
+
+/* Home Page Styles */
+.hero-section {
+    height: 100vh;
+    width: 100%;
+    background-image: url('https://image.wedmegood.com/resized/720X/uploads/member/1798298/1690256811_120FF__23.jpg?v=1.1');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    letter-spacing: 3px;
+    line-height: 1.1;
+    word-spacing: 5px;
+}
+
+.hero-content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+    color: #f8f9fa;
+    letter-spacing: 1px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: #f39c12;
+    color: white;
+    border: 2px solid #f39c12;
+}
+
+.btn-primary:hover {
+    background: #e67e22;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-secondary:hover {
+    background: white;
+    color: #222;
+    transform: translateY(-2px);
+}
+
+/* Features Section */
+.features {
+    padding: 5rem 2rem;
+    text-align: center;
+    background: #f8f9fa;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #222;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Quick Links */
+.quick-links {
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.quick-links h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #222;
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.link-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-decoration: none;
+    color: #222;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.link-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.link-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #f39c12;
+}
+
+.link-card p {
+    color: #666;
+    line-height: 1.5;
 }
 
 /* Responsive */
@@ -157,5 +378,18 @@ footer {
     }
     .menu-toggle {
         display: block;
+    }
+    
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.5rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
     }
 }
