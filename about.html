@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - EventPro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">EventPro</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+
+    <!-- About Hero Section with Video Background -->
+    <section class="about-hero">
+        <div class="hero-video-container">
+            <video autoplay muted loop id="heroVideo">
+                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay">
+                <div class="about-hero-content">
+                    <h1>About EventPro</h1>
+                    <p>Creating unforgettable moments since 2015</p>
+                    <button class="video-control" onclick="toggleVideo()">
+                        <i class="fas fa-pause"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Timeline Section -->
+    <section class="timeline-section">
+        <div class="container">
+            <h2>Our Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-year="2015">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Founded</h3>
+                        <p>EventPro was born with a vision to transform events</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="2017">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>100th Event</h3>
+                        <p>Successfully completed our 100th milestone event</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="2019">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Expansion</h3>
+                        <p>Expanded to 3 cities with 25+ team members</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="2021">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Digital Innovation</h3>
+                        <p>Launched virtual event capabilities</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="2024">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>500+ Events</h3>
+                        <p>Celebrated 500+ successful events with 98% satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dynamic Statistics Dashboard -->
+    <section class="stats-dashboard">
+        <div class="container">
+            <h2>Our Impact by Numbers</h2>
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="fade-up">
+                    <div class="stat-circle">
+                        <span class="stat-number" data-target="500">0</span>
+                        <span class="stat-label">Events Completed</span>
+                    </div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-circle">
+                        <span class="stat-number" data-target="98">0</span>
+                        <span class="stat-label">Client Satisfaction %</span>
+                    </div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-circle">
+                        <span class="stat-number" data-target="50">0</span>
+                        <span class="stat-label">Venue Partnerships</span>
+                    </div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-circle">
+                        <span class="stat-number" data-target="9">0</span>
+                        <span class="stat-label">Years of Excellence</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Team Showcase -->
+    <section class="team-showcase">
+        <div class="container">
+            <h2>Meet Our Expert Team</h2>
+            <div class="team-grid">
+                <div class="team-card" data-aos="flip-left">
+                    <div class="team-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop" alt="Sarah Johnson">
+                    </div>
+                    <div class="team-info">
+                        <h3>Sarah Johnson</h3>
+                        <p>Creative Director</p>
+                        <div class="team-skills">
+                            <div class="skill-bar">
+                                <span>Event Design</span>
+                                <div class="progress"><div class="progress-fill" style="width: 95%"></div></div>
+                            </div>
+                            <div class="skill-bar">
+                                <span>Creative Strategy</span>
+                                <div class="progress"><div class="progress-fill" style="width: 90%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="team-image">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop" alt="Michael Chen">
+                    </div>
+                    <div class="team-info">
+                        <h3>Michael Chen</h3>
+                        <p>Operations Manager</p>
+                        <div class="team-skills">
+                            <div class="skill-bar">
+                                <span>Logistics</span>
+                                <div class="progress"><div class="progress-fill" style="width: 98%"></div></div>
+                            </div>
+                            <div class="skill-bar">
+                                <span>Vendor Management</span>
+                                <div class="progress"><div class="progress-fill" style="width: 92%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="team-image">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b332-3c5d?w=300&h=300&fit=crop" alt="Emily Rodriguez">
+                    </div>
+                    <div class="team-info">
+                        <h3>Emily Rodriguez</h3>
+                        <p>Marketing Director</p>
+                        <div class="team-skills">
+                            <div class="skill-bar">
+                                <span>Brand Strategy</span>
+                                <div class="progress"><div class="progress-fill" style="width: 94%"></div></div>
+                            </div>
+                            <div class="skill-bar">
+                                <span>Digital Marketing</spanIt seems there was an error while trying to edit the about.html file. I will now proceed to create the necessary changes in smaller, more manageable sections to ensure successful execution.
+
+### Step 1: Update the Hero Section with Video Background
+
+<create_file>
+<path>about.html</path>
+<content>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - EventPro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">EventPro</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+
+    <!-- About Hero Section with Video Background -->
+    <section class="about-hero">
+        <div class="hero-video-container">
+            <video autoplay muted loop id="heroVideo">
+                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay">
+                <div class="about-hero-content">
+                    <h1>About EventPro</h1>
+                    <p>Creating unforgettable moments since 2015</p>
+                    <button class="video-control" onclick="toggleVideo()">
+                        <i class="fas fa-pause"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
