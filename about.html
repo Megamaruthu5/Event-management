@@ -178,55 +178,89 @@
                                 <div class="progress"><div class="progress-fill" style="width: 94%"></div></div>
                             </div>
                             <div class="skill-bar">
-                                <span>Digital Marketing</spanIt seems there was an error while trying to edit the about.html file. I will now proceed to create the necessary changes in smaller, more manageable sections to ensure successful execution.
-
-### Step 1: Update the Hero Section with Video Background
-
-<create_file>
-<path>about.html</path>
-<content>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - EventPro</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
-    <!-- Navigation -->
-    <header>
-        <nav>
-            <div class="logo">EventPro</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-        </nav>
-    </header>
-
-    <!-- About Hero Section with Video Background -->
-    <section class="about-hero">
-        <div class="hero-video-container">
-            <video autoplay muted loop id="heroVideo">
-                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="video-overlay">
-                <div class="about-hero-content">
-                    <h1>About EventPro</h1>
-                    <p>Creating unforgettable moments since 2015</p>
-                    <button class="video-control" onclick="toggleVideo()">
-                        <i class="fas fa-pause"></i>
-                    </button>
+                                <span>Digital Marketing</span>
+                                <div class="progress"><div class="progress-fill" style="width: 88%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card" data-aos="flip-left" data-aos-delay="300">
+                    <div class="team-image">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=300&fit=crop" alt="David Kim">
+                    </div>
+                    <div class="team-info">
+                        <h3>David Kim</h3>
+                        <p>Technical Director</p>
+                        <div class="team-skills">
+                            <div class="skill-bar">
+                                <span>Technical Production</span>
+                                <div class="progress"><div class="progress-fill" style="width: 96%"></div></div>
+                            </div>
+                            <div class="skill-bar">
+                                <span>AV Systems</span>
+                                <div class="progress"><div class="progress-fill" style="width: 91%"></div></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Company Values Section -->
+    <section class="about-values">
+        <div class="container">
+            <h2>Our Core Values</h2>
+            <div class="values-grid">
+                <div class="value-card" data-aos="fade-up">
+                    <div class="value-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Excellence</h3>
+                    <p>We strive for perfection in every event, ensuring exceptional quality and attention to detail.</p>
+                </div>
+                <div class="value-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="value-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovation</h3>
+                    <p>Constantly pushing boundaries with creative solutions and cutting-edge event technology.</p>
+                </div>
+                <div class="value-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="value-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Collaboration</h3>
+                    <p>Working closely with clients and partners to bring their vision to life seamlessly.</p>
+                </div>
+                <div class="value-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Passion</h3>
+                    <p>Driven by our love for creating memorable experiences that last a lifetime.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="about-cta">
+        <div class="cta-content">
+            <h2>Ready to Create Your Perfect Event?</h2>
+            <p>Let's work together to bring your vision to life</p>
+            <a href="index.html#contact" class="btn-primary">Get Started Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 EventPro. All rights reserved.</p>
+        <p>Creating unforgettable experiences since 2015</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
